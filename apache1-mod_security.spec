@@ -19,16 +19,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfdir     /etc/httpd
 
 %description
-ModSecurity is an open source intrusion detection and
-prevention engine for web applications. It operates embedded
-into the web server, acting as a powerful umbrella - shielding
-web applications from attacks.
+ModSecurity is an open source intrusion detection and prevention
+engine for web applications. It operates embedded into the web server,
+acting as a powerful umbrella - shielding web applications from
+attacks.
 
 %description -l pl
-ModSecurity jest otwartym silnikiem wykrywania i zapobiegania 
-intruzom dla aplikacji webowych. Oferuje wbudwany w serwer www,
-dzia³aj±c jak potê¿ny parasol chroni±cy aplikacje webowe przed
-atakami.
+ModSecurity jest otwartym silnikiem wykrywania i zapobiegania intruzom
+dla aplikacji webowych. Oferuje wbudwany w serwer www, dzia³aj±c jak
+potê¿ny parasol chroni±cy aplikacje webowe przed atakami.
 
 %prep
 %setup -q -n mod_%{mod_name}-%{version}
