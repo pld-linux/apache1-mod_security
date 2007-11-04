@@ -10,7 +10,7 @@ Group:		Networking/Daemons
 Source0:	http://www.modsecurity.org/download/modsecurity-%{version}.tar.gz
 # Source0-md5:	0dd48656e451c711358c097dc80e0369
 URL:		http://www.modsecurity.org/
-BuildRequires:	apache1-devel >= 1.3.33-2
+BuildRequires:	apache1-devel >= 1.3.39
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	apache1 >= 1.3.33-2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
