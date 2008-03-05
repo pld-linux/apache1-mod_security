@@ -4,7 +4,7 @@ Summary:	Apache module: securing web applications
 Summary(pl.UTF-8):	Moduł do apache: ochrona aplikacji WWW
 Name:		apache1-mod_%{mod_name}
 Version:	1.8.7
-Release:	0.1
+Release:	0.2
 License:	GPL v2
 Group:		Networking/Daemons
 Source0:	http://www.modsecurity.org/download/modsecurity-%{version}.tar.gz
@@ -12,7 +12,7 @@ Source0:	http://www.modsecurity.org/download/modsecurity-%{version}.tar.gz
 URL:		http://www.modsecurity.org/
 BuildRequires:	apache1-devel >= 1.3.39
 BuildRequires:	rpmbuild(macros) >= 1.268
-Requires:	apache1 >= 1.3.33-2
+Requires:	apache1(EAPI)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_pkglibdir	%(%{apxs} -q LIBEXECDIR 2>/dev/null)
